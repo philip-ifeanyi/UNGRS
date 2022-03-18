@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* HTML */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #111;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Utility */
+.l-head {
+  font-size: 4rem;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+
+.m-head {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  padding-bottom: 2rem;
+}
+
+.p-head {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 0.7rem;
+  background: #008000;
+  border-radius: 0.7rem;      
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background: #299617;
+  color: #fff;
+}
+
+
+/* Header */
+#main-header {
+  background: #008000;
+  padding: 1.5rem 1rem;
+  color: #fff ;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#main-header .logo img {
+  width: 15%;
+  display: flex;
+  justify-self: center;
+}
+
+#main-header .logo h2 strong {
+  color: #fff;
+}
+
+#main-header ul {
+  display: flex;
+}
+
+#main-header .header-link {
+  list-style: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+#main-header .header-link a:hover {
+  color: #000;
+}
+
+#main-header ul li details summary {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#main-header ul li details summary i {
+  padding-left: 0.5rem;
+}
+
+#main-header ul li details summary:hover {
+  cursor: pointer;
+  background: #299617;
+  color: #000;
+}
+
+#main-header ul li details summary ::-webkit-details-marker {
+  display: none;
+}
+
+#main-header ul li details ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#main-header ul li details[open] {
+  background: lightgreen;
+  border-radius: 0.5rem;
+  color: #000;
+}
+
+#main-header ul li details ul li {
+  padding-bottom: 0.4rem;
+}
+
+#main-header ul li details ul li a{
+  color: #000;
+}
+
+#main-header ul li details ul li:hover {
+  cursor: pointer;
+  background: #299617;
+}
+
+/* ShowCase */
+#showcase {
+  color: #fff;
+  text-align: center;
+  height: 78vh;
+}
+
+#showcase:before {
+  content: '';
+  background: url(./img/unn-vc.jpg) no-repeat center center/cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 22;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#showcase .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#showcase .showcase-content {
+  padding: 7rem 1rem;
+}
+
+/* Have A Complaint? */
+#details {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 4rem 7rem;
+  border-bottom: 1px solid #ccc ;
+}
+
+#details .m-head {
+  padding-bottom: 1rem;
+  color: #008000;
+}
+
+#details p {
+  padding-bottom: 0.7rem;
+  text-align: left;
+}
+
+#details a {
+  color: #0000ff;
+}
+
+/* Welcome */
+#welcome {
+  background: #d0f0c0;
+  padding: 4rem 7rem;
+  border-bottom: 1px solid #ccc ;
+}
+
+#welcome h2 {
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: #008000;
+  background: #CCE6E6;
+}
+
+#welcome p {
+  line-height: 1.5;
+}
+
+#welcome ul {
+  padding: 1rem 2rem;
+  list-style-type: square;
+}
+
+#welcome ul li {
+  padding-bottom: 0.5rem;
+}
+
+/* Ethics */
+#ethics {
+  background: #f4f4f4;
+  padding: 4rem 7rem;
+}
+
+#ethics div {
+  padding-bottom: 1rem;
+}
+
+#ethics h2 ,#ethics h3 {
+  padding-bottom: 0.7rem;
+  color: #008000;
+}
+
+#ethics p {
+  line-height: 1.4;
+}
+
+/* Footer */
+#main-footer {
+  background: #008000;
+  padding: 4rem 7rem;
+  color: #fff;
+}
+
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-evenly ;
+  width: 100%;
+}
+
+#main-footer .footer-content .info{
+  line-height: 1.5;
+}
+
+#main-footer .footer-content .info img {
+  width: 20%;
+  padding-bottom: 1rem;
+}
+
+#main-footer .footer-content .info p {
+  font-size: 1.2rem;
+}
+
+#main-footer .footer-content #contact h3 {
+  padding-bottom: 0.5rem;
+  font-size: 1.9rem;
+}
+
+#main-footer .footer-content #contact form label {
+  display: block;
+  font-size: 1.25rem;
+}
+
+#main-footer .footer-content #contact form input {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: large;
+  padding: 0 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+#main-footer .footer-content #contact form textarea {
+  height: 6rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: large;
+  padding: 0 0.5rem;
+}
+
+#main-footer .footer-content #contact form input:focus,
+#main-footer .footer-content #contact form textarea:focus {
+  outline: none;
+}
